@@ -1,0 +1,35 @@
+/*----------------------------
+	knobKnob Styles
+-----------------------------*/
+
+
+.knob {
+	width: 166px;
+    height: 166px;
+	position:relative;
+}
+
+.knob .top {
+    width: 166px;
+    height: 166px;
+	position:absolute;
+	top:0;
+	left:0;
+	background: url(../images/master/grip.png) no-repeat 0 0;
+	z-index:10;
+	cursor:default !important;
+}
+
+.knob [draggable] {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.handle {
+    width: 166px;
+    height: 166px;
+    position: absolute;
+    top: 43px;
+    left: 69px;
+}

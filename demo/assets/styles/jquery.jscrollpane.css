@@ -1,0 +1,265 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 2px;
+	width: auto;
+	height: 100%;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+    background: url(../images/jscrollpane/jspTrack.png) repeat;
+	position: relative;
+    width: 6px;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+}
+
+.jspDrag
+{
+	background: url(../images/jscrollpane/jspDrag.png) repeat;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
+
+.jspPane {
+    min-width: 100%;
+    /* Fot Fucking Chrome*/
+    max-width: 100%;
+}
+
+.scroll-box .jspVerticalBar .jspArrow,
+.clevered.default .jClever-element .jspArrow {
+    height: 4px;
+    background: none;
+}
+
+.scroll-ingredient-list .jspVerticalBar .jspArrow {
+    height: 9px;
+    background: none;
+}
+
+.more-likes .scroll-box .jspVerticalBar .jspArrow {
+    height: 15px;
+}
+
+.more-likes .jspVerticalBar {
+    right: 6px;
+}
+
+
+.scroll-box .jspHorizontalBar {
+    display: none;
+}
+
+/* Сброс для маржинов и отключение для колонок */
+.community-scroll-init > .jspContainer > .jspHorizontalBar {
+    display: none;
+}
+
+.community-scroll-init > .jspContainer > .jspVerticalBar {
+    width: 10px;
+}
+
+.community-scroll-init > .jspContainer > .jspVerticalBar  > .jspTrack {
+    width: 0;
+}
+
+/* Сброс для маржинов и отключение для контента */
+.community-content-outer > .jspContainer > .jspVerticalBar {
+    display: none;
+}
+.community-content-outer > .jspContainer > .jspVerticalBar  > .jspTrack {
+    width: 0;
+}
+
+.community-content-outer > .jspContainer > .jspHorizontalBar {
+    border-top: 1px solid #323232;
+    height: 14px;
+    z-index: 150;
+    background: url(../images/jscrollpane/jspHorizontalBar.png) repeat;
+    -webkit-box-shadow: 0 -2px 3px -2px rgba(44,44,44,1);
+       -moz-box-shadow: 0 -2px 3px -2px rgba(44,44,44,1);
+            box-shadow: 0 -2px 3px -2px rgba(44,44,44,1);
+}
+
+.community-content-outer > .jspContainer > .jspHorizontalBar > .jspTrack {
+    background: transparent;
+    height: 8px;
+    margin: 2px 0 0;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    
+}
+
+.community-content-outer > .jspContainer > .jspHorizontalBar > .jspTrack > .jspDrag {
+    margin: 1px 0 0;
+    background: #ededed;
+    height: 7px;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    -webkit-box-shadow: 0 1px 0 rgba(0,1,0,0.18) inset, 0 1px 0 rgba(255,255,255,0.08);
+       -moz-box-shadow: 0 1px 0 rgba(0,1,0,0.18) inset, 0 1px 0 rgba(255,255,255,0.08);
+            box-shadow: 0 1px 0 rgba(0,1,0,0.18) inset, 0 1px 0 rgba(255,255,255,0.08);
+}
+
+.community-content-outer > .jspContainer > .jspHorizontalBar .jspArrow {
+    width: 5px;
+    background: none;
+    z-index: -5;
+    visibility: hidden;
+}
+
+.scroll-ingredient-list .jspTrack {
+    background: url(../images/jscrollpane/master-jspTrack.png) repeat;
+}
+
+.scroll-ingredient-list .jspDrag {
+    background: url(../images/jscrollpane/master-jspDrag.png) repeat;
+}
+
+.scroll-ingredient-list .jspVerticalBar {
+    right: 9px;
+}
+
+.mr-cats-list .jspVerticalBar {
+    right: 0;
+}
+
+
+.community-scroll-init > .jspContainer > .jspVerticalBar {
+    z-index: 999;
+    opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+.community-scroll-init > .jspContainer:hover > .jspVerticalBar {
+    opacity: 1;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+.community-side .community-scroll-init > .jspContainer:hover > .jspVerticalBar {
+    opacity: 0;
+}
+.community-scroll-init > .jspContainer > .jspVerticalBar > .jspTrack > .jspDrag {
+    width: 8px;
+    margin: 0 6px 0 0;
+    background: #838383;
+}
+
+.community-scroll-init > .jspContainer > .jspVerticalBar .jspArrow {
+    background: none;
+    opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    height: 4px;
+}
+ .community-collumn-wrap.with-header .community-scroll-init > .jspContainer > .jspVerticalBar .jspArrowUp {
+    height: 45px;
+ }
+.community-scroll-init > .jspContainer > .jspVerticalBar .jspArrow.jspArrowDown {
+    height: 17px;
+}

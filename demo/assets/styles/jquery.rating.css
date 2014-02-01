@@ -1,0 +1,40 @@
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.rating-cancel,div.star-rating{
+    margin: 0 0 0 0px;
+    vertical-align: middle;
+    display: inline-block; *zoom: 1; *display: inline;
+    width:33px;
+    height:26px;
+    text-indent:-999em;
+    cursor:pointer;
+    background:transparent;overflow:hidden;
+}
+div.rating-cancel:first-child,div.star-rating:first-child{
+    margin: 0;
+}
+div.rating-cancel,div.rating-cancel a{}
+div.star-rating,div.star-rating a{}
+div.rating-cancel a{display:none;width:16px;height:100%;background-position:0 0px;border:0}
+div.star-rating a{
+    display:block;
+    width:28px;
+    height: 26px;
+    background: url(../images/icons/rait-stars.png) no-repeat;
+    border:0;
+    margin: 0 0 0 5px;
+}
+div.star-rating-on a{background-position:0 -26px;}
+div.star-rating-hover a{background-position:0 -26px;}
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default;}
+/* Partial Star CSS */
+div.star-rating{}
+/* END jQuery.Rating Plugin CSS */
+
+.mark-rait-stars .jClever-element {
+    display: none;
+}
+
+.mark-rait-stars input {
+    visibility: hidden;
+}
