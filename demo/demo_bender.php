@@ -34,7 +34,7 @@ echo $bender->output_css('demo/cache','style');
             <div class="container">
                 <h1>Hello, world!</h1>
                 <p>This is a Bender demo</p>
-                <p><a class="btn btn-primary btn-lg" href="http://www.esiteq.com/projects/bender/">Learn more &raquo;</a></p>
+                
             </div>
         </div>
     </div>
@@ -58,7 +58,7 @@ echo $bender->output_js('demo/cache','script-1');
 
 <?
 $bender->enqueue(array(
-    
+
     'demo/assets/scripts/fileuploader.js',
     'demo/assets/scripts/masonry.js',
     'demo/assets/scripts/jquery.jscrollpane.min.js',

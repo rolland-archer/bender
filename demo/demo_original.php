@@ -27,7 +27,7 @@
                     <div class="container">
                         <h1>Hello, world!</h1>
                         <p>This is a Bender demo</p>
-                        <p><a class="btn btn-primary btn-lg" href="http://www.esiteq.com/projects/bender/">Learn more &raquo;</a></p>
+                        
                     </div>
                 </div>
             </div>
