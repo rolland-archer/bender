@@ -19,8 +19,10 @@ class Bender
     public $cssmin = "cssmin";
     // JS minifier, can be "packer" or "jshrink"
     public $jsmin = "packer";
-    // Project's root dir
+    // Sites's root dir
     private $root_dir;
+    // Directory of input point
+    private $ip_dir;
     // version key for src modifying
     public $version_key = 'v';
     // developer mode
@@ -127,7 +129,7 @@ class Bender
             default:
                 $packed = $str;
         }  
-        file_put_contents( $output, $packed );
+        file_put_contents( $this->root_dir.'/'.$output, $packed );
         $this->remove_old($output_dir,$output_prefix,$hash,'css');
         return $output;
     }
